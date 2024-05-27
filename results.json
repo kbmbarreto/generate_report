@@ -1,0 +1,312 @@
+{
+	"id": "6959238c-1c27-4417-95c6-bc5d57b62660",
+	"name": "DAEE",
+	"timestamp": "2024-05-26T19:04:37.886Z",
+	"collection_id": "17262696-9c3c54a6-2db4-4469-9270-a6f5f7268857",
+	"folder_id": "17262696-7c4647e3-4bd9-4581-8d3b-d4eb2cd29b23",
+	"environment_id": "17262696-e118a4c1-3000-4b2e-9a17-dd18776148c2",
+	"totalPass": 15,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-05-26T19:04:33.356Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d5b965d7-acfe-4b05-aef9-5a07bec9641e",
+			"name": "Validar tentativa de criação de uma execução de atividade com sucesso - Com Token Inválido",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities/1/executions",
+			"time": 167,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status Code deve ser 401 - Unauthorized": true,
+				"Teste de contrato - Deve existir o atributo 'message'": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 401 - Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Teste de contrato - Deve existir o atributo 'message'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 401 - Unauthorized": true,
+					"Teste de contrato - Deve existir o atributo 'message'": true
+				}
+			]
+		},
+		{
+			"id": "23618a4d-5264-4d93-8a60-38c70216bdce",
+			"name": "Criar uma execução de atividade com sucesso",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities/1/executions",
+			"time": 708,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status Code deve ser 201 - Created": true,
+				"Teste de contrato - Deve existir o atributo 'executionId'": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 201 - Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Teste de contrato - Deve existir o atributo 'executionId'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				708
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 201 - Created": true,
+					"Teste de contrato - Deve existir o atributo 'executionId'": true
+				}
+			]
+		},
+		{
+			"id": "939a86cd-e3a6-4763-b6c7-3e3d685b6c97",
+			"name": "Validar tentativa de listar uma execução de atividade por id - Com Token Inválido",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities/7/executions",
+			"time": 241,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status Code deve ser 401 - Unauthorized": true,
+				"Teste de contrato - Deve existir o atributo 'message'": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 401 - Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Teste de contrato - Deve existir o atributo 'message'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				241
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 401 - Unauthorized": true,
+					"Teste de contrato - Deve existir o atributo 'message'": true
+				}
+			]
+		},
+		{
+			"id": "28fde03d-1e3d-42fe-bfde-2032b145a05b",
+			"name": "Lista uma execução de atividade por id",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities/7/executions",
+			"time": 351,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code deve ser 200 - OK": true,
+				"Teste de contrato - Devem existir os atributos 'total' e 'executions'": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 200 - OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Teste de contrato - Devem existir os atributos 'total' e 'executions'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				351
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 200 - OK": true,
+					"Teste de contrato - Devem existir os atributos 'total' e 'executions'": true
+				}
+			]
+		},
+		{
+			"id": "d0d0ae75-c9d4-43cb-9520-00dd836958b8",
+			"name": "Validar tentativa de listar todas as execuções de atividades - Com Token Inválido",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities",
+			"time": 196,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status Code deve ser 401 - Unauthorized": true,
+				"Teste de contrato - Deve existir o atributo 'message'": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 401 - Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Teste de contrato - Deve existir o atributo 'message'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				196
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 401 - Unauthorized": true,
+					"Teste de contrato - Deve existir o atributo 'message'": true
+				}
+			]
+		},
+		{
+			"id": "09315c6c-0be2-41bc-9feb-0491bc42f448",
+			"name": "Lista todas as execuções de atividades",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities",
+			"time": 404,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code deve ser 200 - OK": true,
+				"Teste de contrato - Validar os atributos de retorno da API": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 200 - OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Teste de contrato - Validar os atributos de retorno da API": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				404
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 200 - OK": true,
+					"Teste de contrato - Validar os atributos de retorno da API": true
+				}
+			]
+		},
+		{
+			"id": "83700c3d-4944-42ca-86be-798c6c8151c4",
+			"name": "Validar tentativa de apagar uma execução de atividade com sucesso - Com Token Inválido",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities/executions/7",
+			"time": 169,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status Code deve ser 401 - Unauthorized": true,
+				"Teste de contrato - Deve existir o atributo 'message'": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 401 - Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Teste de contrato - Deve existir o atributo 'message'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 401 - Unauthorized": true,
+					"Teste de contrato - Deve existir o atributo 'message'": true
+				}
+			]
+		},
+		{
+			"id": "f0c0510e-f257-48e8-a96e-e01e79d7cbf8",
+			"name": "Apagar uma execução de atividade com sucesso",
+			"url": "https://daee-api.azurewebsites.net/api/it-management/activities/executions/7",
+			"time": 597,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status Code deve ser 204 - No Content": true
+			},
+			"testPassFailCounts": {
+				"Status Code deve ser 204 - No Content": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				597
+			],
+			"allTests": [
+				{
+					"Status Code deve ser 204 - No Content": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2833,
+	"collection": {
+		"requests": [
+			{
+				"id": "d5b965d7-acfe-4b05-aef9-5a07bec9641e",
+				"method": "POST"
+			},
+			{
+				"id": "23618a4d-5264-4d93-8a60-38c70216bdce",
+				"method": "POST"
+			},
+			{
+				"id": "939a86cd-e3a6-4763-b6c7-3e3d685b6c97",
+				"method": "GET"
+			},
+			{
+				"id": "28fde03d-1e3d-42fe-bfde-2032b145a05b",
+				"method": "GET"
+			},
+			{
+				"id": "d0d0ae75-c9d4-43cb-9520-00dd836958b8",
+				"method": "GET"
+			},
+			{
+				"id": "09315c6c-0be2-41bc-9feb-0491bc42f448",
+				"method": "GET"
+			},
+			{
+				"id": "83700c3d-4944-42ca-86be-798c6c8151c4",
+				"method": "DELETE"
+			},
+			{
+				"id": "f0c0510e-f257-48e8-a96e-e01e79d7cbf8",
+				"method": "DELETE"
+			}
+		]
+	}
+}
