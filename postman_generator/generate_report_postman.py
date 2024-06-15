@@ -11,7 +11,7 @@ html = f"""
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório de Testes</title>
+    <title>Informe de Pruebas</title>
     <style>
         body {{ font-family: Arial, sans-serif; }}
         table {{ width: 100%; border-collapse: collapse; margin-bottom: 20px; }}
@@ -22,7 +22,7 @@ html = f"""
     </style>
 </head>
 <body>
-    <h1>Resultado dos Testes - {data['name']}</h1>
+    <h1>Informe de Pruebas - {data['name']}</h1>
     <p>ID: {data['id']}</p>
     <p>Timestamp: {data['timestamp']}</p>
     <p>Total Pass: {data['totalPass']}</p>
@@ -31,11 +31,11 @@ html = f"""
     <table>
         <thead>
             <tr>
-                <th>Nome do Teste</th>
+                <th>Caso de prueba</th>
                 <th>URL</th>
                 <th>Status</th>
-                <th>Tempo (ms)</th>
-                <th>Testes</th>
+                <th>Tiempo (ms)</th>
+                <th>Validaciones</th>
             </tr>
         </thead>
         <tbody>
@@ -66,7 +66,7 @@ html += """
 """
 
 # Escrever o relatório HTML em um arquivo
-with open('report.html', 'w') as file:
+with open('report_postman.html', 'w') as file:
     file.write(html)
 
 print("Relatório HTML criado com sucesso!")
