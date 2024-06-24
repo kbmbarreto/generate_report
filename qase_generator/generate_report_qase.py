@@ -3,7 +3,7 @@ import json
 project = "Ahumada Atención Médica - Médico"
 
 # Carregar os dados do arquivo JSON
-with open('collection.json', 'r', encoding='utf-8') as file:
+with open('results.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 # Função para processar as suites recursivamente e gerar linhas de tabela
